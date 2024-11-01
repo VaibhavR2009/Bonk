@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonk.io Replica</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #gameCanvas {
+        border: 1px solid black;
+        background-color: #f0f0f0;
+      }
+      #usernamePopup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: white;
+        border: 2px solid black;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="usernamePopup">
+      <label for="usernameInput">Enter Username:</label>
+      <input type="text" id="usernameInput" placeholder="Guest" />
+      <button id="joinButton">Join Game</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="chatContainer">
+      <div id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button id="sendButton">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

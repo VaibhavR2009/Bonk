@@ -1,0 +1,33 @@
+#chatContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 70%;
+  width: 250px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#chatMessages {
+  flex: 1;
+  padding: 5px;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+#chatInput {
+  border: none;
+  padding: 5px;
+  width: calc(100% - 50px);
+}
+
+#sendButton {
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+}
